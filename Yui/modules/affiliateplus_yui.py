@@ -18,20 +18,27 @@ class Yui_Affiliate():
 
     def __init__(self) -> None:
         self.data = {
-            "age": "16",
-            "birthyear": "2006",
-            "birthdate": "December 15, 2006",
-            "birthplace": "Earth",
-            "location": "New York",
+            "age": "2 hari lebih",
+            "birthyear": "2022",
+            "birthdate": "1 Desember, 2022",
+            "birthplace": "@BestieZone",
+            "location": "Telegram",
             "build": "Yui - v1.0 (Affiliate+ Engine)",
             "version": "Yui - v1.0",
-            "celebrity": "Marshmello",
-            "company": "Yui",
-            "email": "sorry@i-dont-have-an-email.sad",
+            "celebrity": "@Yeftaza",
+            "company": "Citra",
+            "email": "Gada",
+            "pacar": "@RainGeo",
+            "ibu": "Luna",
+            "bapak": "@Botfather",
+            "grup": "@BestieZone",
+            "ayang": "@yeftaza",
+            "pemilik": "@yeftaza",
+            "owner": "@yeftaza",
             "kindmusic": "Future bass"
         }
         self.bot_name = Config.CHAT_BOT_NAME
-        self.dev_name = "Itz-fork"
+        self.dev_name = "yeftaza"
 
     async def ask_yui(self, message, user_id):
         c_message = await self.__prepare_message(message)
@@ -47,6 +54,6 @@ class Yui_Affiliate():
         py_t = Async_PyTranslator()
         msg_origin = await py_t._detect_lang(message)
         if msg_origin != "en":
-            return await py_t.translate(message, "en")
+            return await py_t.translate(message, "id")
         else:
             return message
