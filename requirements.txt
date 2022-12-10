@@ -5,3 +5,4 @@ aiohttp
 python-arq
 heroku3
 git+https://github.com/Itz-fork/py-trans.git
+gunicorn
